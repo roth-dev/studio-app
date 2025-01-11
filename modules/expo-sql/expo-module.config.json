@@ -1,0 +1,17 @@
+{
+  "platforms": [
+    "apple",
+    "android",
+    "web"
+  ],
+  "apple": {
+    "modules": [
+      "ExpoSqlModule"
+    ]
+  },
+  "android": {
+    "modules": [
+      "expo.modules.sql.ExpoSqlModule"
+    ]
+  }
+}
