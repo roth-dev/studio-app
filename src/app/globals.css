@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -48,12 +49,15 @@
     --ring: 216 34% 17%;
   }
 }
+/* Custom styles */
+@layer utilities {
+  .border-border {
+    border-color: theme('colors.border'); /* Uses the custom 'border' color */
+  }
+}
 
 @layer base {
   * {
     @apply border-border;
-  }
-  body {
-    @apply font-sans antialiased bg-background text-foreground;
-  }
+  } 
 }
